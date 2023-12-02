@@ -14,49 +14,6 @@
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </head>
 
-  <header class="fixed top-0 bg-white">
-    <!-- Header Sm-->
-    <div class="fixed top-0 navbar max-w-screen-sm bg-base-100 md:hidden backdrop-blur-2xl bg-white">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-          </div>
-          <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a href="#m_PRODUK">Produk</a></li>
-            <li><a href="#m_CERITA">Cerita</a></li>
-            <li><a href="#m_TENTANGKAMI">Tentang Kami</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="navbar-center">
-        <a class="btn btn-ghost text-xl text-[#415848]" href="#">Mama Rent Pump</a>
-      </div>
-      <div class="navbar-end">
-        <a href="https://shp.ee/br9cxtj" target="_blank">
-          <button class="btn btn-ghost btn-circle">
-            <div class="indicator">
-              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M17.5 0C7.83496 0 0 7.83496 0 17.5C0 27.165 7.83496 35 17.5 35C27.165 35 35 27.165 35 17.5C35 7.83496 27.165 0 17.5 0ZM13.4434 23.5889C13.7383 23.863 14.0908 24 14.5039 24C14.917 24 15.2705 23.863 15.5645 23.5889C15.8584 23.3147 16.0059 22.9851 16.0059 22.6001C16.0059 22.2151 15.8584 21.8855 15.5645 21.6113C15.2705 21.3372 14.917 21.2 14.5039 21.2C14.0908 21.2 13.7383 21.3372 13.4434 21.6113C13.1494 21.8855 13.0029 22.2151 13.0029 22.6001C13.0029 22.8057 13.0449 22.9954 13.1279 23.1692C13.2012 23.321 13.3066 23.4609 13.4434 23.5889ZM20.9512 23.5889C21.2451 23.863 21.5986 24 22.0107 24C22.4238 24 22.7773 23.863 23.0713 23.5889C23.3652 23.3147 23.5127 22.9851 23.5127 22.6001C23.5127 22.2151 23.3652 21.8855 23.0713 21.6113C22.7773 21.3372 22.4238 21.2 22.0107 21.2C21.7461 21.2 21.5049 21.2566 21.2881 21.3701C21.168 21.4331 21.0557 21.5134 20.9512 21.6113C20.6562 21.8855 20.5098 22.2151 20.5098 22.6001C20.5098 22.9851 20.6562 23.3147 20.9512 23.5889ZM24.2256 11.3999H13.1533L12.4395 10H10V11.3999H11.501L14.2041 16.7202L13.1904 18.4351C12.9277 18.8901 12.9404 19.3481 13.2275 19.8086C13.5156 20.2695 13.9414 20.5 14.5039 20.5H23.5127V19.1001H14.5039L15.3301 17.7002H20.9229C21.1982 17.7002 21.4512 17.6357 21.6826 17.5073C21.9141 17.3794 22.0986 17.1982 22.2363 16.9648L24.9014 12.4849C25.0391 12.2402 25.0322 11.998 24.8828 11.7588C24.8047 11.6353 24.709 11.5435 24.5947 11.4834C24.4873 11.4277 24.3643 11.3999 24.2256 11.3999Z"
-                  fill="url(#paint0_linear_185_16)"
-                />
-                <defs>
-                  <linearGradient id="paint0_linear_185_16" x1="19.95" y1="2.25" x2="19.95" y2="60" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#EA8F7C" />
-                    <stop offset="1" stop-color="#DC715B" />
-                  </linearGradient>
-                </defs>
-              </svg>
-            </div>
-          </button>
-        </a>
-      </div>
-    </div>
-  </header>
-
   <body>
     <div class="font-sans sm:px-4 md:px-[120px]">
       <!-- Header Md -->
@@ -92,7 +49,7 @@
       </div>
 
       <!-- Hero Sm -->
-      <div class="md:hidden bg-base-100 max-w-sm pt-20 text-[#4C5C5D] delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
+      <div class="md:hidden mx-auto bg-base-100 max-w-sm pt-5 text-[#4C5C5D] delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
         <div class="hero py-8">
           <div class="hero-content flex-col lg:flex-row">
             <img src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/Hero.webp" class="max-w-sm rounded-lg shadow-2xl" />
@@ -123,6 +80,47 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Header Sm-->
+      <div class="sticky top-0 navbar max-w-screen-sm bg-base-100 md:hidden backdrop-blur-2xl bg-white">
+        <div class="sticky top-0 navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+            </div>
+            <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a href="#m_PRODUK">Produk</a></li>
+              <li><a href="#m_CERITA">Cerita</a></li>
+              <li><a href="#m_TENTANGKAMI">Tentang Kami</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="sticky top-0 navbar-center">
+          <a class="btn btn-ghost text-xl text-[#415848]" href="#">Mama Rent Pump</a>
+        </div>
+        <div class="sticky top-0 navbar-end">
+          <a href="https://shp.ee/br9cxtj" target="_blank">
+            <button class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17.5 0C7.83496 0 0 7.83496 0 17.5C0 27.165 7.83496 35 17.5 35C27.165 35 35 27.165 35 17.5C35 7.83496 27.165 0 17.5 0ZM13.4434 23.5889C13.7383 23.863 14.0908 24 14.5039 24C14.917 24 15.2705 23.863 15.5645 23.5889C15.8584 23.3147 16.0059 22.9851 16.0059 22.6001C16.0059 22.2151 15.8584 21.8855 15.5645 21.6113C15.2705 21.3372 14.917 21.2 14.5039 21.2C14.0908 21.2 13.7383 21.3372 13.4434 21.6113C13.1494 21.8855 13.0029 22.2151 13.0029 22.6001C13.0029 22.8057 13.0449 22.9954 13.1279 23.1692C13.2012 23.321 13.3066 23.4609 13.4434 23.5889ZM20.9512 23.5889C21.2451 23.863 21.5986 24 22.0107 24C22.4238 24 22.7773 23.863 23.0713 23.5889C23.3652 23.3147 23.5127 22.9851 23.5127 22.6001C23.5127 22.2151 23.3652 21.8855 23.0713 21.6113C22.7773 21.3372 22.4238 21.2 22.0107 21.2C21.7461 21.2 21.5049 21.2566 21.2881 21.3701C21.168 21.4331 21.0557 21.5134 20.9512 21.6113C20.6562 21.8855 20.5098 22.2151 20.5098 22.6001C20.5098 22.9851 20.6562 23.3147 20.9512 23.5889ZM24.2256 11.3999H13.1533L12.4395 10H10V11.3999H11.501L14.2041 16.7202L13.1904 18.4351C12.9277 18.8901 12.9404 19.3481 13.2275 19.8086C13.5156 20.2695 13.9414 20.5 14.5039 20.5H23.5127V19.1001H14.5039L15.3301 17.7002H20.9229C21.1982 17.7002 21.4512 17.6357 21.6826 17.5073C21.9141 17.3794 22.0986 17.1982 22.2363 16.9648L24.9014 12.4849C25.0391 12.2402 25.0322 11.998 24.8828 11.7588C24.8047 11.6353 24.709 11.5435 24.5947 11.4834C24.4873 11.4277 24.3643 11.3999 24.2256 11.3999Z"
+                    fill="url(#paint0_linear_185_16)"
+                  />
+                  <defs>
+                    <linearGradient id="paint0_linear_185_16" x1="19.95" y1="2.25" x2="19.95" y2="60" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#EA8F7C" />
+                      <stop offset="1" stop-color="#DC715B" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </button>
+          </a>
         </div>
       </div>
 
@@ -157,7 +155,7 @@
       <div class="md:hidden p-4 rounded-2xl delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
         <div class="hero text-white bg-cover bg-local rounded-lg" style="background-image: url(https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/tagline.webp)">
           <div class="hero-content text-center py-14">
-            <div class="max-w-md space-y-10">
+            <div class="max-w space-y-10">
               <h1 class="text-5xl font-bold">Dear, Para mama hebat.</h1>
               <p class="py-6 text-2xl">Mama Rent Pump hadir untuk mama menyiapkan nutrisi buah hati, dari hati ke hati</p>
             </div>
