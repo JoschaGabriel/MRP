@@ -7,16 +7,60 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Mama Rent Pump</title>
     <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/icon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </head>
 
-  <header>
-    <!-- Header -->
+  <header class="fixed top-0 bg-white">
+    <!-- Header Sm-->
+    <div class="fixed top-0 navbar bg-base-100 md:hidden backdrop-blur-2xl bg-white">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+          </div>
+          <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a href="#m_PRODUK">Produk</a></li>
+            <li><a href="#m_CERITA">Cerita</a></li>
+            <li><a href="#m_TENTANGKAMI">Tentang Kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost text-xl text-[#415848]" href="#">Mama Rent Pump</a>
+      </div>
+      <div class="navbar-end">
+        <a href="https://shp.ee/br9cxtj" target="_blank">
+          <button class="btn btn-ghost btn-circle">
+            <div class="indicator">
+              <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.5 0C7.83496 0 0 7.83496 0 17.5C0 27.165 7.83496 35 17.5 35C27.165 35 35 27.165 35 17.5C35 7.83496 27.165 0 17.5 0ZM13.4434 23.5889C13.7383 23.863 14.0908 24 14.5039 24C14.917 24 15.2705 23.863 15.5645 23.5889C15.8584 23.3147 16.0059 22.9851 16.0059 22.6001C16.0059 22.2151 15.8584 21.8855 15.5645 21.6113C15.2705 21.3372 14.917 21.2 14.5039 21.2C14.0908 21.2 13.7383 21.3372 13.4434 21.6113C13.1494 21.8855 13.0029 22.2151 13.0029 22.6001C13.0029 22.8057 13.0449 22.9954 13.1279 23.1692C13.2012 23.321 13.3066 23.4609 13.4434 23.5889ZM20.9512 23.5889C21.2451 23.863 21.5986 24 22.0107 24C22.4238 24 22.7773 23.863 23.0713 23.5889C23.3652 23.3147 23.5127 22.9851 23.5127 22.6001C23.5127 22.2151 23.3652 21.8855 23.0713 21.6113C22.7773 21.3372 22.4238 21.2 22.0107 21.2C21.7461 21.2 21.5049 21.2566 21.2881 21.3701C21.168 21.4331 21.0557 21.5134 20.9512 21.6113C20.6562 21.8855 20.5098 22.2151 20.5098 22.6001C20.5098 22.9851 20.6562 23.3147 20.9512 23.5889ZM24.2256 11.3999H13.1533L12.4395 10H10V11.3999H11.501L14.2041 16.7202L13.1904 18.4351C12.9277 18.8901 12.9404 19.3481 13.2275 19.8086C13.5156 20.2695 13.9414 20.5 14.5039 20.5H23.5127V19.1001H14.5039L15.3301 17.7002H20.9229C21.1982 17.7002 21.4512 17.6357 21.6826 17.5073C21.9141 17.3794 22.0986 17.1982 22.2363 16.9648L24.9014 12.4849C25.0391 12.2402 25.0322 11.998 24.8828 11.7588C24.8047 11.6353 24.709 11.5435 24.5947 11.4834C24.4873 11.4277 24.3643 11.3999 24.2256 11.3999Z"
+                  fill="url(#paint0_linear_185_16)"
+                />
+                <defs>
+                  <linearGradient id="paint0_linear_185_16" x1="19.95" y1="2.25" x2="19.95" y2="60" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#EA8F7C" />
+                    <stop offset="1" stop-color="#DC715B" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </button>
+        </a>
+      </div>
+    </div>
   </header>
 
   <body>
-    <div class="font-sans px-[120px]">
-      <!-- Body Header -->
-      <div class="flex justify-between">
+    <div class="font-sans sm:px-4 md:px-[120px]">
+      <!-- Header Md -->
+      <div class="md:flex justify-between hidden sm:block">
         <div class="flex">
           <div class="w-[300px] h-[98px] bg-cover flex" style="background-image: url(https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/Header%20Pill_4x.webp)">
             <div class="mx-4"></div>
@@ -31,6 +75,7 @@
           </ul>
         </div>
 
+        <!-- Body Header -->
         <div class="my-auto">
           <a href="https://shp.ee/br9cxtj" target="_blank">
             <button class="py-3 px-4 text-white font-semibold w-48 h-12 bg-gradient-to-b from-[#EA8F7C] to-[#DC715B] flex rounded-xl">
@@ -46,8 +91,43 @@
         </div>
       </div>
 
-      <!-- Hero -->
-      <div class="flex text-[#4C5C5D] bg-[#C3D0C7] h-auto rounded-r-2xl rounded-bl-2xl mx-auto">
+      <!-- Hero Sm -->
+      <div class="md:hidden text-[#4C5C5D] delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
+        <div class="hero min-h-screen bg-base-200">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/Hero.webp" class="max-w-sm rounded-lg shadow-2xl" />
+            <div>
+              <h1 class="text-5xl font-bold">Cinta dari mama</h1>
+              <p class="py-6">
+                Mama beraktivitas, mama memberi nutrisi, mama akhirnya beraktivitas sambil memberi nutrisi.
+                <br />
+                <br />
+                Mama Rent Pump hadir menyediakan beragam peralatan mudah dan terjangkau untuk menemani mama pumping seiring tumbuh kembang anak. Mama sang superhero.
+              </p>
+              <a href="https://shp.ee/br9cxtj" target="_blank">
+                <button class="flex gap-x-3 p-3 rounded-lg bg-gradient-to-b from-[#EA8F7C] to-[#DC715B] text-white">
+                  Lihat Berbagai Produk Terbaik Kami
+                  <svg width="26" height="28" viewBox="0 0 36 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M34.3457 19.044C34.3457 28.2306 26.9784 35.6515 17.9228 35.6515C8.86721 35.6515 1.5 28.2306 1.5 19.044C1.5 9.85742 8.86721 2.43652 17.9228 2.43652C26.9784 2.43652 34.3457 9.85742 34.3457 19.044Z"
+                      fill="#EA8F7C"
+                      stroke="white"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M6.78125 17.5544C6.22897 17.5544 5.78125 18.0022 5.78125 18.5544C5.78125 19.1067 6.22897 19.5544 6.78125 19.5544V17.5544ZM29.7708 19.2616C30.1613 18.871 30.1613 18.2379 29.7708 17.8473L23.4068 11.4834C23.0163 11.0929 22.3831 11.0929 21.9926 11.4834C21.6021 11.8739 21.6021 12.5071 21.9926 12.8976L27.6495 18.5544L21.9926 24.2113C21.6021 24.6018 21.6021 25.235 21.9926 25.6255C22.3831 26.016 23.0163 26.016 23.4068 25.6255L29.7708 19.2616ZM6.78125 19.5544H29.0637V17.5544H6.78125V19.5544Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Md-->
+      <div class="md:flex text-[#4C5C5D] bg-[#C3D0C7] h-auto rounded-r-2xl rounded-bl-2xl mx-auto hidden sm:block delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
         <div class="w-[550px] px-8 pt-16">
           <h1 class="my-2 text-5xl font-bold">Cinta dari mama</h1>
           <p class="font-normal my-2">Mama beraktivitas, mama memberi nutrisi, mama akhirnya beraktivitas sambil memberi nutrisi.</p>
@@ -73,8 +153,25 @@
         </div>
       </div>
 
+      <!-- Tagline Sm -->
+      <div class="md:hidden p-4 rounded-2xl delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300">
+        <div class="hero text-white bg-cover bg-local rounded-lg" style="background-image: url(https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/tagline.webp)">
+          <div class="hero-content text-center py-14">
+            <div class="max-w-md space-y-10">
+              <h1 class="text-5xl font-bold">Dear, Para mama hebat.</h1>
+              <p class="py-6 text-2xl">Mama Rent Pump hadir untuk mama menyiapkan nutrisi buah hati, dari hati ke hati</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- Tagline -->
-      <div class="text-white bg-center my-16 h-auto rounded-2xl mx-auto bg-cover bg-local" style="background-image: url(https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/tagline.webp)" id="Tagline">
+      <div
+        class="text-white bg-center my-16 h-auto rounded-2xl mx-auto bg-cover bg-local hidden sm:block delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+        data-taos-offset="300"
+        style="background-image: url(https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/tagline.webp)"
+        id="Tagline"
+      >
         <h1 class="mx-auto text-[42px] font-semibold w-max pt-8">Dear Para Mama Hebat</h1>
         <p class="flex mx-auto text-lg text-center font-normal w-max pt-2 pb-8">
           Mama Rent Pump hadir untuk mama menyiapkan nutrisi buah hati, <br />
@@ -85,15 +182,104 @@
         </p>
       </div>
 
-      <!-- Fitur -->
-      <div class="PRODUK flex text-[#4C5C5D] h-auto rounded-2xl my-16 mx-auto" id="PRODUK">
+      <!-- Produk -->
+      <div class="PRODUK md:flex text-[#4C5C5D] h-auto rounded-2xl my-16 mx-auto hidden sm:block" id="PRODUK">
         <img src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/all%20for%20desktop.webp" />
       </div>
 
+      <!-- Produk Sm -->
+      <div class="#m_PRODUK md:hidden p-4 rounded-lg text-4xl font-semibold" id="m_PRODUK">
+        <div class="hero text-white bg-cover bg-local rounded-lg p-5" style="background-image: url(https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/tagline.webp)">Produk</div>
+      </div>
+
+      <!-- List produk Sm -->
+      <div class="md:hidden p-4 rounded-xl">
+        <div class="hero bg-[#F5F9F6] text-[#4C5C5D] rounded-lg">
+          <div class="hero-content flex-col lg:flex-row mx-auto text-center">
+            <div>
+              <h1 class="text-4xl font-bold mx-auto justify-self-center">Spectra Dual Compact</h1>
+              <p class="py-6 font-normal">Spectra Dual Compact merupakan versi kecil dan ekonomis dari Spectra Dual S, Modelnya cantik dan fancy, terlihat mewah, harga sewa juga terjangkau untuk pompa ASI Hospital Grade</p>
+            </div>
+            <img src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/spectra%202%20compact.webp" class="w-80 h-auto rounded-lg pb-6" />
+          </div>
+        </div>
+      </div>
+
+      <div class="md:hidden p-4 rounded-xl">
+        <div class="hero bg-[#F5F9F6] text-[#4C5C5D] rounded-lg">
+          <div class="hero-content flex-col lg:flex-row mx-auto text-center">
+            <div>
+              <h1 class="text-4xl font-bold mx-auto justify-self-center">Spectra H1 Wearable</h1>
+              <p class="py-6 font-normal">
+                Pompa ASI elektrik Hospital Grade asal Korea Selatan, memompa ASI menjadi mungkin dilakukan dimanapun dan kapanpun. Spectra H1 Wearable Breastpump dapat langsung digunakan tanpa selang, tanpa kabel (rechargeable battery),
+                dan tanpa corong terpisah. Soo easy!!
+              </p>
+            </div>
+            <img src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/spectra%20h1.webp" class="w-60 h-auto rounded-lg pb-6" />
+          </div>
+        </div>
+      </div>
+
+      <div class="md:hidden p-4 rounded-xl">
+        <div class="hero bg-[#F5F9F6] text-[#4C5C5D] rounded-lg">
+          <div class="hero-content flex-col lg:flex-row mx-auto text-center">
+            <div>
+              <h1 class="text-4xl font-bold mx-auto justify-self-center">Spectra 9 Plus</h1>
+              <p class="py-6 font-normal">
+                Spectra 9 Plus terbaru termasuk kategori pompa ASI Hospital Grade berukuran kecil. Pembaruan motor pompanya menghasilkan vibrasi nyaris sebaik Spectra S1 Plus & S2 Plus. Teknologi vibrasi dan smooth suction Spectra 9 Plus
+                menstimulasi LDR lebih cepat.
+              </p>
+            </div>
+            <img src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/spectra%209%20plus.webp" class="w-80 h-auto rounded-lg pb-6" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Cerita Sm -->
+      <div class="m_CERITA md:hidden text-6xl mx-auto w-max text-[#4C5C5D] font-bold py-6" id="m_CERITA">Cerita</div>
+      <div class="md:hidden p-4 rounded-3xl text-[#4C5C5D]">
+        <div class="bg-[#F8FAF9] p-10 rounded-xl">
+          <span>
+            <h3 class="text-3xl font-bold">Mrs.A</h3>
+            <p>28 Tahun, Bankir</p>
+
+            <h6 class="pt-10 pb-4 text-lg">“Mama Rent Pump membantu saya saat pumping di kantor, Spectra H1 bagus banget!”</h6>
+
+            <img class="w-[262px] h-auto rounded-2xl" src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/mrs%20a.webp" />
+          </span>
+        </div>
+      </div>
+
+      <div class="md:hidden p-4 rounded-3xl text-[#4C5C5D]">
+        <div class="bg-[#F8FAF9] p-10 rounded-xl">
+          <span>
+            <h3 class="text-3xl font-bold">Mrs. I</h3>
+            <p>31 Tahun, Akuntan</p>
+
+            <h6 class="pt-10 pb-4 text-lg">“Aku terbantu banget dengan pompa ASI ini, udah 3 bulan sewa di Mamarentpump. Terima kasih ya membantu aku mengasihi”</h6>
+
+            <img class="w-[262px] h-auto rounded-2xl" src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/mrs%20i.webp" />
+          </span>
+        </div>
+      </div>
+
+      <div class="md:hidden p-4 rounded-3xl text-[#4C5C5D]">
+        <div class="bg-[#F8FAF9] p-10 rounded-xl">
+          <span>
+            <h3 class="text-3xl font-bold">Mrs. N</h3>
+            <p>26 Tahun, Wirausaha</p>
+
+            <h6 class="pt-10 pb-4 text-lg">“Tadinya aku sudah beli breastpump tapi ga cocok dan jadi sakit. Lalu aku coba sewa Spectra 9+ jadi jatuh cinta, Akhirnya aku beli Spectra 9+. Thank you admin.”</h6>
+
+            <img class="w-[262px] h-auto rounded-2xl" src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/mrs%20n.webp" />
+          </span>
+        </div>
+      </div>
+
       <!-- Cerita -->
-      <div class="CERITA inline-block w-max text-[#4C5C5D] h-auto rounded-2xl my-16 mx-auto" id="CERITA">
-        <h1 class="w-max mx-auto font-semibold text-5xl p-16">Cerita</h1>
-        <div class="flex space-x-16 mx-auto">
+      <div class="CERITA md:inline-block w-max text-[#4C5C5D] h-auto rounded-2xl my-16 mx-auto hidden sm:block delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0" data-taos-offset="300" id="CERITA">
+        <h1 class="sm:max-w-sm md:w-max mx-auto font-semibold text-5xl p-16">Cerita</h1>
+        <div class="inline-block md:flex space-x-16 mx-auto">
           <div class="w-96 p-12 bg-blue-50 rounded-xl">
             <h2 class="font-bold text-3xl">Mrs. A</h2>
             <h4 class="font-normal text-lg py-4">28 Tahun, Bankir</h4>
@@ -120,10 +306,27 @@
         </div>
       </div>
 
-      <div></div>
+      <!-- Tentang kami Sm -->
+      <div class="md:hidden text-6xl mx-auto w-max text-[#4C5C5D] font-bold py-6 text-center" id="m_TENTANGKAMI">
+        Tentang <br />
+        Kami
+      </div>
+
+      <div class="md:hidden p-4 py-10 self-center text-[#4C5C5D]">
+        <img class="w-[382px] h-auto rounded-2xl" src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/tentang1.webp" />
+        <h3 class="text-3xl font-bold py-4">Mama Rent Pump</h3>
+        <p class="text-2xl font-normal">
+          Menyediakan pompa ASI untuk direntalkan kepada mama yang sedang menyusui. Pompa ASI adalah alat yang membantu mama menyusui untuk memompa ASI dan menyimpannya dalam botol atau kantong plastik. Kami memberikan layanan penyewaan
+          pompa ASI yang dapat membantu mama yang ingin menyusui bayinya dengan memberikan akses ke pompa ASI berkualitas tinggi tanpa harus membelinya.
+        </p>
+        <h3 class="text-4xl font-bold py-8 text-center">Rent pump dapat diorder via e-commerce berikut :</h3>
+        <div class="w-40 h-20 bg-[#EE4D2D] mx-auto rounded-2xl">
+          <img class="p-4" src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/image%2015.webp" alt="" />
+        </div>
+      </div>
 
       <!-- Tentang Kami -->
-      <div class="TENTANGKAMI inline-block text-[#4C5C5D] h-auto rounded-2xl my-16 mx-auto" id="TENTANGKAMI">
+      <div class="TENTANGKAMI md:inline-block text-[#4C5C5D] h-auto rounded-2xl my-16 mx-auto hidden sm:block" id="TENTANGKAMI">
         <h1 class="w-max mx-auto font-semibold text-5xl p-16">Tentang Kami</h1>
         <div class="h-auto bg-[#F9FBF9] rounded-2xl p-16 space-y-16">
           <div class="flex space-x-10">
@@ -157,8 +360,34 @@
         </div>
       </div>
 
+      <!-- Info Sm -->
+      <div class="md:hidden p-4 text-white">
+        <div class="bg-[#405848] rounded-2xl p-6">
+          <h3 class="text-3xl font-bold py-4">Mama Rent Pump</h3>
+          <p class="text-2xl font-normal pb-10">Kami siap membantu kebutuhan mama, baik pertanyaan spesifik perihal kelengkapan kit pumping maupun pertanyaan general lainnya.</p>
+          <a href=""
+            ><button class="text-green-950 bg-white rounded-xl p-4 text-xl font-semibold flex">
+              <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.279 9.64061C7.48534 8.78353 8.25777 7.76244 8.85032 7.56668C8.92968 7.54023 9.24183 7.52965 9.54868 7.54023C9.92792 7.55468 10.0483 7.55926 10.1336 7.61626C10.1732 7.64276 10.2053 7.68058 10.2523 7.73598C10.4745 7.99522 11.5062 10.503 11.5062 10.7781C11.5062 11.0109 11.3634 11.249 10.7867 11.9685C10.6015 12.2013 10.501 12.3759 10.501 12.4711C10.501 12.7621 11.3422 13.9207 12.0776 14.6456C12.321 14.8836 12.7389 15.2328 13.0035 15.4233C13.559 15.8254 14.9081 16.5131 15.1303 16.5131C15.3049 16.5131 15.5641 16.2645 16.1144 15.5555C16.6487 14.8625 16.6593 14.8519 16.9344 14.8942C17.1619 14.926 19.6168 16.0582 19.8707 16.2539C19.9871 16.3386 19.9977 16.3862 19.9924 16.7618C19.9818 17.2433 19.8601 17.7723 19.675 18.0845C19.3946 18.5659 18.5216 19.1585 17.8232 19.3436C17.3735 19.46 16.4053 19.4495 15.871 19.3225C14.8499 19.0738 13.305 18.4019 12.4162 17.8199C11.0459 16.9205 9.79734 15.6878 8.64399 14.1006C7.37423 12.3547 6.96156 10.995 7.279 9.64061Z"
+                  fill="#4C5C5D"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M6.00396 3.30772C7.98266 1.82105 10.1889 1.00629 12.8289 0.778793C13.3156 0.736467 14.8076 0.810536 15.4636 0.905768C20.823 1.69407 25.1296 5.90013 26.0237 11.2225C26.4629 13.8414 26.1084 16.4179 24.9709 18.8146C24.2249 20.4018 22.9075 22.0736 21.5426 23.1793C20.1405 24.3063 18.3893 25.1739 16.6381 25.613C13.8606 26.3061 10.7655 25.9993 8.21016 24.7771L7.55941 24.465L4.24218 25.3379C2.41691 25.8194 0.914368 26.2003 0.903786 26.1897C0.887914 26.1791 1.27942 24.7083 1.77145 22.9254L2.66028 19.6769L2.40104 19.1955C1.745 17.9416 1.29 16.4867 1.07838 14.926C0.977855 14.1853 0.988437 12.397 1.09954 11.6458C1.45401 9.32317 2.37987 7.18575 3.80835 5.42926C4.32154 4.79968 5.37966 3.77329 6.00396 3.30772ZM20.9553 6.00594C19.3152 4.37113 17.3048 3.36062 15.0721 3.05377C13.4585 2.83156 12.0353 2.94795 10.5063 3.42411C6.89279 4.55102 4.13107 7.60371 3.38509 11.3019C2.85603 13.9366 3.32161 16.5449 4.75008 18.8834L5.0199 19.3225L4.50671 21.2059C4.22102 22.2429 4.0041 23.1 4.01468 23.1106C4.02526 23.1212 4.90351 22.9042 5.96693 22.6291L7.89272 22.1212L8.36358 22.391C9.46933 23.0312 10.6597 23.4545 12.0088 23.6925C12.7337 23.8142 14.4425 23.8142 15.1832 23.6925C17.7598 23.2481 19.9607 21.9995 21.6008 20.0314C22.6853 18.7352 23.4684 17.111 23.807 15.4656C24.5159 12.0002 23.4684 8.52428 20.9553 6.00594Z"
+                  fill="#4C5C5D"
+                />
+              </svg>
+              <p class="px-2">Whatsapp MamaRentPump</p>
+            </button></a
+          >
+          <img class="rounded-2xl pt-5" src="https://raw.githubusercontent.com/JoschaGabriel/MRP/main/webp/memerlukan%20informasi.webp" />
+        </div>
+      </div>
+
       <!-- Info Lebih Lanjut -->
-      <div class="bg-cover bg-local w-auto gap-y-20" style="background-image: url(https://github.com/JoschaGabriel/MRP/raw/main/webp/memerlukan%20informasi_4x.webp)">
+      <div class="bg-cover bg-local w-auto gap-y-20 hidden sm:block" style="background-image: url(https://github.com/JoschaGabriel/MRP/raw/main/webp/memerlukan%20informasi_4x.webp)">
         <div class="h-20"></div>
         <div class="flex p-10 space-x-80">
           <div class="w-auto">
@@ -187,7 +416,86 @@
     </div>
   </body>
 
-  <footer class="font-sans text-[#415848] bg-[#F5F9F6] mx-auto mt-16">
+  <!-- Footer Sm -->
+  <footer class="md:hidden footer footer-center p-10 bg-[#F5F9F6] text-[#4C5C5D]">
+    <div>
+      <ul class="py-5 px-14 text-xl font-sans">
+        <p class="font-semibold">Mama Rent Pump</p>
+        <li><a href="#m_PRODUK">Produk</a></li>
+        <li><a href="#m_CERITA">Cerita</a></li>
+        <li><a href="#m_TENTANGKAMI">Tentang Kami</a></li>
+      </ul>
+
+      <ul class="py-5 px-14 text-xl font-sans">
+        <p class="font-semibold">E-Commerce</p>
+        <li><a href="https://shp.ee/br9cxtj" target="_blank">Shopee</a></li>
+      </ul>
+
+      <ul class="py-5 px-14 text-xl font-sans">
+        <p class="font-semibold">Hubungi Kami</p>
+        <li><a href="https://wa.me/6282112281508" target="_blank">Whatsapp Store - Tangerang</a></li>
+      </ul>
+    </div>
+
+    <aside>
+      <svg width="154" height="21" viewBox="0 0 154 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M148.672 0.202621C145.663 1.28472 142.616 8.38129 142.616 14.3077C142.616 17.7931 143.503 19.9824 144.892 19.9824C145.934 19.9824 147.014 17.8308 147.631 14.6348L148.055 12.4958L149.559 12.0051C151.218 11.4766 152.337 10.6462 153.34 9.22432C154.304 7.84024 154.188 3.93964 153.147 2.34166C152.298 1.05824 150.909 0.0642128 149.907 0.00130081C149.598 -0.011282 149.019 0.0767956 148.672 0.202621Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M4.60144 0.542555C1.32271 2.88291 -1.64743 18.7747 1.0527 19.6555C2.40276 20.0959 4.60144 16.1198 5.21861 11.9801L5.48862 10.2311L6.02865 11.4013L6.56867 12.5715L7.80302 11.8669L9.03736 11.1497L8.84449 14.7231C8.65163 18.5231 9.03736 19.9449 10.1174 19.5926C11.9689 18.9886 13.7819 14.1569 14.6305 7.77753C15.2477 3.07165 14.6305 0.227991 13.0104 0.227991C12.2775 0.227991 11.1589 1.02069 10.0403 2.25379C9.46167 2.94583 8.88307 3.49946 8.76735 3.49946C8.65163 3.49946 8.26589 2.94583 7.84159 2.27895C6.76154 0.429312 5.60434 -0.187233 4.60144 0.542555Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M30.4838 0.379063C29.2109 0.920113 27.8608 3.6002 26.7036 7.84053C24.9292 14.6225 25.0835 20.1463 27.0508 19.6178C28.9023 19.1145 31.0624 13.3769 30.6381 10.2312C30.4838 9.17428 30.5223 8.65839 30.7538 8.78422C30.9466 8.88488 31.1395 9.42593 31.1395 9.97956C31.1781 11.1623 31.641 12.1438 32.2196 12.3325C32.4896 12.4206 32.9139 12.2822 33.6082 11.8544L34.5725 11.2378L34.3411 14.4464C34.0711 18.4728 34.4568 19.9575 35.7683 19.5297C37.8127 18.8629 40.3971 10.4451 40.3971 4.64455C40.3585 1.38567 39.6256 -0.0235806 38.0827 0.290985C37.427 0.416809 36.3083 1.32276 35.344 2.49294C34.8811 3.04657 34.3797 3.47437 34.2639 3.42404C34.1482 3.3863 33.7625 2.85783 33.4153 2.26645C32.721 1.08369 31.7953 0.228071 31.2167 0.228071C31.0238 0.228071 30.6766 0.303566 30.4838 0.379063Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M60.5322 0.378994C58.1021 1.3856 56.752 3.61271 55.1705 9.16163C54.2062 12.5967 54.2062 18.586 55.132 19.2529C55.4791 19.5171 55.9806 19.731 56.212 19.731C56.9063 19.731 57.6778 18.976 58.295 17.7304C58.6035 17.0886 58.9507 16.5224 59.0664 16.4847C59.1821 16.4469 59.2979 16.7238 59.2979 17.1012C59.3364 18.0575 60.3008 19.731 60.9565 19.9575C61.458 20.121 61.5737 20.1085 61.9594 19.882C63.4252 18.976 64.5052 15.4529 63.9267 13.3265C63.7338 12.6093 63.4638 11.9298 63.3481 11.7914C63.2323 11.6656 63.6566 10.6715 64.351 9.57685C66.7425 5.714 66.2025 1.83857 63.1166 0.555151C62.268 0.202839 61.188 0.127344 60.5322 0.378994Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M72.0659 0.467323C69.2115 1.39843 67.36 4.78314 66.2028 11.1751C65.3156 16.12 66.5113 19.7061 69.1729 20.0332C71.8344 20.373 74.6503 18.0955 74.9975 15.3022C75.1903 13.9433 75.1132 13.6539 74.5731 13.377C73.8788 13.0373 72.7602 12.9618 72.143 13.2261C71.3716 13.528 70.4844 14.6479 70.0987 15.7677C69.5972 17.2776 69.0186 18.3597 68.71 18.4604C68.5943 18.4981 68.5557 18.3597 68.71 18.1584C68.8257 17.9445 69.1343 17.2776 69.3272 16.6485C69.5586 16.0194 69.9829 14.887 70.2915 14.132C70.6001 13.3645 70.8315 12.7102 70.8701 12.6598C70.8701 12.6095 71.4487 12.5592 72.1045 12.534C73.1074 12.5088 73.5317 12.3956 74.226 11.993C75.9232 10.9864 76.2704 8.88506 74.9203 7.82813C74.3417 7.36257 72.9145 7.09834 72.143 7.29966C71.7573 7.40032 71.6416 6.88443 71.6416 4.75798C71.6416 3.27324 71.7187 2.10306 71.7959 2.12822C71.873 2.15339 72.143 3.10966 72.3745 4.25468C72.9145 6.67053 73.0302 6.89702 73.7245 6.89702C75.4989 6.89702 77.5819 5.00963 77.5819 3.3739C77.5819 2.02756 76.7332 1.14678 74.8817 0.605732C73.3002 0.165342 73.0302 0.15276 72.0659 0.467323Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M96.5214 0.403826C93.8598 0.793886 92.2397 1.69983 91.7383 3.0965L91.4297 3.93953L93.3198 4.88322L95.2099 5.81433L94.4384 9.28712C93.3198 14.2321 93.0498 16.9247 93.5898 18.3466C93.8598 19.0009 94.207 19.5922 94.3998 19.6552C94.9013 19.8187 95.7885 19.0764 96.5214 17.9817C97.7557 16.0314 99.4143 10.0421 99.4143 7.39974V6.02824L98.2572 6.14148C97.37 6.22956 97.1 6.20439 97.1 6.06598C97.1 5.97791 97.5628 5.86466 98.18 5.82691C101.844 5.58784 103.657 4.7574 103.966 3.19716C104.236 1.77533 102.809 0.793886 99.9158 0.403826C98.3729 0.189922 97.9871 0.189922 96.5214 0.403826Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M110.794 0.5298C108.402 1.71256 106.859 4.74496 105.548 10.7343C104.892 13.7541 104.853 18.1077 105.509 18.9381C106.203 19.8063 106.859 19.9825 107.746 19.5421C108.826 19.0136 109.405 17.9063 109.829 15.6415C110.369 12.7601 110.408 12.6594 112.182 11.9674C114.921 10.8727 116.001 9.3376 116.271 6.0158C116.502 3.39863 115.885 1.71256 114.342 0.806616C113.262 0.164906 111.758 0.0390797 110.794 0.5298Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M140.765 0.378962C140.109 0.655777 138.913 1.52398 137.794 2.53058C136.599 3.62527 136.406 3.61268 135.673 2.36701C134.67 0.605448 133.397 0.12731 132.201 1.02067C129.887 2.74448 127.573 11.6529 128.074 16.8999C128.344 19.4164 128.537 19.819 129.347 19.5925C130.658 19.2402 131.893 16.988 132.664 13.6536C132.934 12.4834 133.204 11.5774 133.281 11.6529C133.32 11.7159 134.053 11.6655 134.901 11.5397C136.56 11.2755 136.522 11.3006 137.64 9.60199C137.987 9.04835 138.296 8.68346 138.334 8.78412C138.373 8.88478 138.103 9.40067 137.756 9.91655C137.254 10.6463 137.1 11.8794 136.946 15.2893C136.753 19.3535 136.792 19.731 137.409 19.731C139.646 19.731 141.459 15.3019 142.655 6.77091C143.079 3.66301 142.925 1.38557 142.192 0.630613C141.767 0.202805 141.382 0.139893 140.765 0.378962Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M80.707 0.882332C78.3926 2.71939 75.731 13.7166 76.6182 17.8311C76.8111 18.7496 77.1583 19.5674 77.3511 19.6304C78.3154 19.9449 79.7812 18.133 80.5141 15.6417C80.977 14.1695 81.247 13.6285 81.4785 13.704C81.5556 13.7291 81.9799 14.7861 82.4042 16.0443C83.2914 18.435 83.9857 19.4668 84.95 19.731C85.4129 19.8568 85.5672 19.8191 85.9144 19.5423C87.9973 17.743 90.1574 10.4828 90.196 5.04716C90.2346 1.14656 89.7717 0.00155067 88.4988 0.819418C86.8401 1.86377 85.4515 5.72662 85.953 7.9034C86.1072 8.5577 86.2615 9.37557 86.2615 9.71529C86.3387 10.8855 85.9915 10.2312 85.5672 8.40671C84.6029 4.30479 83.8314 2.45515 82.5971 1.20948C81.8256 0.429359 81.4013 0.366446 80.707 0.882332Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M120.9 0.744183C119.55 1.41106 118.547 3.71367 117.313 9.0361C116.464 12.5215 116.348 17.63 117.081 18.5359C118.045 19.7439 119.974 20.1339 122.096 19.5425C124.873 18.775 126.184 16.0698 127.612 7.96658C128.036 5.58847 127.882 1.58722 127.342 0.819677C127.149 0.555445 126.994 0.505114 126.57 0.618357C125.22 0.983252 123.87 3.22295 123.33 5.95337C123.137 6.98514 122.674 8.97318 122.327 10.3573C121.98 11.7414 121.787 13.2513 121.864 13.7168L122.019 14.5724H120.861H119.743L120.514 14.283C121.208 14.0314 121.363 13.7042 121.826 11.1122C122.404 8.02949 122.443 1.42364 121.864 0.794514L121.556 0.417036L120.9 0.744183ZM124.024 14.887C124.294 15.0631 124.487 15.2519 124.487 15.3022C124.449 15.428 122.944 14.8241 122.944 14.6857C122.944 14.4592 123.6 14.585 124.024 14.887Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M20.9568 1.25958C18.2181 3.68801 13.7822 14.1693 13.7822 18.309C13.7822 19.0891 13.9365 19.756 14.168 19.7937C14.9394 19.9447 16.8681 17.7427 18.6039 14.7607C19.6454 12.9362 19.7997 13.062 20.3397 16.2706C20.7254 18.5354 21.304 19.605 22.1912 19.7056C23.387 19.8315 24.0427 18.0447 24.6213 13.1627C25.1613 8.25549 24.3513 2.19069 23.0398 1.03309C22.4998 0.580118 21.6126 0.668198 20.9568 1.25958Z"
+          fill="#4C5C5D"
+        />
+        <path
+          d="M46.5308 1.2849C44.7565 2.60607 41.7478 8.51988 39.9734 14.3204C39.3562 16.2959 39.3176 19.5422 39.8962 19.7435C40.8606 20.0581 41.9792 18.825 43.715 15.5913C44.255 14.5218 44.8336 13.5277 44.9879 13.3893C45.1422 13.2509 45.4122 14.1065 45.5665 15.2767C45.9137 18.1581 46.8009 19.7309 48.1123 19.7309C48.5366 19.7309 49.1924 18.4098 49.6938 16.3966C50.311 14.0185 50.3496 5.51264 49.7324 3.47426C49.1924 1.75045 48.5752 0.844507 47.8038 0.75643C47.5337 0.731264 46.9937 0.95775 46.5308 1.2849Z"
+          fill="#4C5C5D"
+        />
+      </svg>
+
+      <p class="font-bold">© 2023 MamaRentPump</p>
+      <p>All Right Reserved. License Agreement.</p>
+    </aside>
+  </footer>
+
+  <!-- Footer -->
+  <footer class="font-sans text-[#415848] bg-[#F5F9F6] mx-auto mt-16 hidden sm:block">
     <div>
       <div class="px-[120px] py-16 flex">
         <div>
